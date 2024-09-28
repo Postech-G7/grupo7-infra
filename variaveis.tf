@@ -23,7 +23,7 @@ variable "instanceType" {
 }
 
 variable "principalArn" {
-  default = "arn:aws:iam::192212762391:user/monhol"
+  default = "arn:aws:sts::125235889703:assumed-role/voclabs/user3422844=charlis.monhol@gmail.com"
 }
 
 variable "policyArn" {
