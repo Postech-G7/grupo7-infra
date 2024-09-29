@@ -2,15 +2,15 @@ variable "regionDefault" {
   description = "Região default dos recursos"
   type        = string
   default     = "us-east-1"
-
 }
 
 variable "projectName" {
-  default = "EKS-FIAPFASE3"
+  description = "Nome do Projeto"
+  default     = "EKS-FIAPFASE3"
 }
 
 variable "labRole" {
-  default = "arn:aws:iam::125235889703:role/LabRole"
+  default = "arn:aws:iam::462767461212:role/LabRole"
 }
 
 variable "accessConfig" {
@@ -26,7 +26,7 @@ variable "instanceType" {
 }
 
 variable "principalArn" {
-  default = "arn:aws:iam::125235889703:role/voclabs"
+  default = "arn:aws:iam::462767461212:role/LabRole"
 }
 
 variable "policyArn" {
