@@ -6,7 +6,7 @@ on:
       - main
 env:
   REGION_DEFAULT: "us-east-1"
-  CLUSTER_NAME: "EKS-FIAP"  
+  CLUSTER_NAME: "EKS-FIAP"
 jobs:
   deploy:
     name: Deploy AWS Academy
