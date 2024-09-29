@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  REGION_DEFAULT: "us-east-1a"
+  REGION_DEFAULT: "us-east-1"
   CLUSTER_NAME: "EKS-FIAP"  
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
           aws-region: ${{ env.REGION_DEFAULT }}
 
       - name: Update Kube Config
-        run: aws eks update-kubeconfig --name ${{ env.CLUSTER_NAME }} --region ${{ env.REGION_DEFAULT }}
+        run: aws eks update-kubeconfig --name EKS-FIAP --region us-east-1
 
       - name: Kube Apply
         run: |
