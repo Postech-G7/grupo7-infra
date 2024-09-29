@@ -7,7 +7,7 @@ variable "projectName" {
 }
 
 variable "labRole" {
-  default = "arn:aws:iam::192212762391:user/monhol"
+  default = "arn:aws:iam::125235889703:role/LabRole"
 }
 
 variable "accessConfig" {
