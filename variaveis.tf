@@ -6,7 +6,7 @@ variable "regionDefault" {
 
 variable "projectName" {
   description = "Nome do Projeto"
-  default     = "EKS-FIAPFASE3"
+  default     = "EKS-FIAP"
 }
 
 variable "labRole" {
