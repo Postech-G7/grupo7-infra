@@ -1,12 +1,9 @@
 variable "regionDefault" {
-  description = "Região default dos recursos"
-  type        = string
-  default     = "us-east-1"
+  default = "us-east-1"
 }
 
 variable "projectName" {
-  description = "Nome do Projeto"
-  default     = "EKS-FIAP"
+  default = "EKS-FIAP"
 }
 
 variable "labRole" {
@@ -22,7 +19,7 @@ variable "nodeGroup" {
 }
 
 variable "instanceType" {
-  default = "t2.micro"
+  default = "t3.medium"
 }
 
 variable "principalArn" {
