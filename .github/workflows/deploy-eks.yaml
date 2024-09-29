@@ -22,10 +22,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ID }}    
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}          
           aws-region: ${{ env.REGION_DEFAULT }}
-
+          
       - name: Update Kube Config
-        run: aws eks update-kubeconfig --name EKS-FIAP --region us-east-1
-
+        run: aws eks update-kubeconfig --name ${{ env.CLUSTER_NAME }} --region ${{ env.REGION_DEFAULT }}
+        
       - name: Kube Apply
         run: |
           kubectl apply -f k8s/eks-deployment.yaml
