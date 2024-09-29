@@ -6,7 +6,7 @@ on:
       - main
 env:
   REGION_DEFAULT: "us-east-1"
-  CLUSTER_NAME: "EKS-FIAPFASE3"
+  CLUSTER_NAME: "EKS-FIAP"
   
 jobs:
   deploy:
