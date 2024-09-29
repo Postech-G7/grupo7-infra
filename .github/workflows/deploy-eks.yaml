@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  REGION_DEFAULT: "us-east-1"
+  REGION_DEFAULT: "us-east-1a"
   CLUSTER_NAME: "EKS-FIAP"  
 jobs:
   deploy:
