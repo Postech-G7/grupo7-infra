@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "6soat-backend"
+    bucket = "bucket-backend-grupo7"
     key    = "fiap/terraform.tfstate"
     region = "us-east-1"
   }
