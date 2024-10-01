@@ -7,7 +7,7 @@ variable "projectName" {
 }
 
 variable "labRole" {
-  default = "arn:aws:iam::308728427507:role/LabRole"
+  default = "arn:aws:iam::941377125671:role/devrobs-full-acess"
 }
 
 variable "accessConfig" {
@@ -23,7 +23,7 @@ variable "instanceType" {
 }
 
 variable "principalArn" {
-  default = "arn:aws:iam::308728427507:role/LabRole"
+  default = "arn:aws:iam::941377125671:role/devrobs-full-acess"
 }
 
 variable "policyArn" {
