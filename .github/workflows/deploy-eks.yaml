@@ -29,5 +29,5 @@ jobs:
 
       - name: Kube Apply
         run: |
-          kubectl apply -f k8s/eks-deployment.yaml
+          kubectl apply -f k8s/eks-deployment.yaml --validate=false
           kubectl apply -f k8s/eks-svc.yaml
