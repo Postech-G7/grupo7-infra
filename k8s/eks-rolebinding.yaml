@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: eks-sample-rolebinding
+  namespace: default
+subjects:
+- kind: User
+  name: "arn:aws:iam::941377125671:user/devrobs"
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: eks-sample-role
+  apiGroup: rbac.authorization.k8s.io
