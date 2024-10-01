@@ -25,8 +25,8 @@ spec:
                 - amd64
                 - arm64
       containers:
-      - name: nginx
-        image: public.ecr.aws/nginx/nginx:stable-perl
+      - name: api-backend
+        image: 941377125671.dkr.ecr.us-east-1.amazonaws.com/api-backend:latest
         resources:
             requests:
               cpu: 256m
@@ -36,7 +36,7 @@ spec:
               memory: 1024Mi
         ports:
         - name: http
-          containerPort: 80
+          containerPort: 3000
         imagePullPolicy: IfNotPresent
       nodeSelector:
         kubernetes.io/os: linux
