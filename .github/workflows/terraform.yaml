@@ -29,10 +29,6 @@ jobs:
       - name: Terraform Setup
         uses: hashicorp/setup-terraform@v3
 
-      - name: Terraform Destroy
-        id: destroy
-        run: terraform destroy -auto-approve 
-
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
@@ -41,6 +37,10 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
+      
+      - name: Terraform Destroy
+        id: destroy
+        run: terraform destroy -auto-approve
 
       - name: Terraform Validate
         id: validate
